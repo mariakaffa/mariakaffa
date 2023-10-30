@@ -1,0 +1,52 @@
+body {
+  font-family: arial;
+}
+
+.intro {
+  grid-area: intro;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.work {
+  grid-area: work;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.cpd {
+  grid-area: cpd;
+}
+
+.education {
+  grid-area: education;
+}
+
+.cv {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: none;
+  grid-template-areas:
+    "intro contact"
+    "work skills"
+    "work cpd"
+      "work languages"
+      "work education";
+  column-gap: 10em;
+  margin: 10px 10px 10px 10px;
+}
+
+.sr-only {
+  display: none;
+}
+
+.mainheading {
+  font-size: 28pt;
+  margin: 2px
+}
+
+
